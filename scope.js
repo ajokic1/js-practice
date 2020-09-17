@@ -1,5 +1,5 @@
 function forLoop() {
-  for (let i=0; i<5; i++) {
+  for (let i = 0; i < 5; i++) {
     var test = 'asdf';
     let test2 = 'fdsa';
   }
