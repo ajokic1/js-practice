@@ -3,10 +3,12 @@ class Rectangle {
     this.a = a;
     this.b = b;
   }
+  
   scale (value) {
     this.a *= value;
     this.b *= value;
   }
+  
   print () {
     console.log(`Dimensions: ${this.a} x ${this.b}`);
   }
