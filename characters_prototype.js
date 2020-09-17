@@ -49,7 +49,7 @@ player.printPosition();
 const npcs = [];
 for (let i = 0; i < 3; i++) {
   const npc = new NonPlayerCharacter();
-  npcs.push(npc);
+  nonPlayerCharacters.push(npc);
   npc.printPosition();
 }
 

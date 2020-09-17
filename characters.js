@@ -60,11 +60,11 @@ Character.count = 0;
 
 const player = new PlayerCharacter();
 player.printPosition();
-const npcs = [];
+const nonPlayerCharacters = [];
 for (let i = 0; i < 3; i++) {
-  const npc = new NonPlayerCharacter();
-  npcs.push(npc);
-  npc.printPosition();
+  const nonPlayerCharacter = new NonPlayerCharacter();
+  nonPlayerCharacters.push(nonPlayerCharacter);
+  nonPlayerCharacter.printPosition();
 }
 
 player.setPosition(10, 10)
