@@ -16,5 +16,13 @@ const handlePromiseAsync = async (promise) => {
 }
 
 console.log("Waiting for result...");
-handlePromise(waitFail(1000, true)); // Error
-handlePromiseAsync(waitFail(2000, false)); // Success
+const promise1 = waitFail(1000, true);
+const promise2 = waitFail(2000, false); 
+const promise3 = waitFail(5000);
+
+handlePromise(promise1); // Error
+handlePromiseAsync(promise2); // Success
+
+Promise.all([promise1, promise2, promise3])
+  .then(() => console.log("All promises have finished successfully."))
+  .catch(() => console.log("One of the promises has failed."));
